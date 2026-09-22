@@ -1,4 +1,3 @@
-
 /* =========================================
    GENERAL STYLING
 ========================================= */
@@ -7,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #212529;
+    color: red;
 }
 
 
@@ -45,11 +44,23 @@ body {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: red;
 }
 
 .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
+    color: red;
+}
+
+
+/* =========================================
+   BOOTSTRAP BUTTONS
+   BUTTON TEXT REMAINS BLACK
+========================================= */
+
+.btn {
+    color: black !important;
 }
 
 
@@ -92,7 +103,7 @@ body {
     right: 10px;
 
     background: green;
-    color: white;
+    color: white !important;
 
     padding: 8px 15px;
 
@@ -114,6 +125,11 @@ body {
 .section-heading h2 {
     font-size: 36px;
     font-weight: bold;
+    color: red;
+}
+
+.section-heading p {
+    color: red;
 }
 
 
@@ -156,8 +172,18 @@ body {
     position: relative;
 }
 
+.profile-card h3 {
+    color: red;
+}
 
-/* PSEUDO ELEMENT */
+.profile-card p {
+    color: red;
+}
+
+
+/* =========================================
+   PSEUDO ELEMENT
+========================================= */
 
 .profile-card::before {
     content: "PROFILE";
@@ -168,8 +194,7 @@ body {
     left: 25px;
 
     background: #0d6efd;
-
-    color: white;
+    color: white !important;
 
     padding: 5px 15px;
 
@@ -192,12 +217,24 @@ body {
    CSS FLEXBOX
 ========================================= */
 
-
 .skills-container {
-  flex-direction: row;
+    display: flex;
 
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    flex-direction: row;
 }
 
+
+/* =========================================
+   SKILL BOX
+========================================= */
 
 .skill-box {
     flex: 1 1 200px;
@@ -218,8 +255,18 @@ body {
         box-shadow 0.3s ease;
 }
 
+.skill-box h4 {
+    color: red;
+}
 
-/* CSS EFFECT */
+.skill-box p {
+    color: red;
+}
+
+
+/* =========================================
+   CSS EFFECT
+========================================= */
 
 .skill-box:hover {
     transform: translateY(-8px);
@@ -261,9 +308,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+.project-card h4 {
+    color: red;
+}
 
-.project-card:hover {
-    transform: translateY(-10px);
+.project-card p {
+    color: red;
 }
 
 
@@ -301,11 +351,20 @@ body {
 ========================================= */
 
 .grayscale img {
-   filter: blur(3px);
+    filter: blur(3px);
 }
 
 .grayscale:hover img {
     filter: grayscale(0%);
+}
+
+
+/* =========================================
+   PROJECT CARD HOVER
+========================================= */
+
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
 
@@ -333,7 +392,7 @@ body {
 .flex-item {
     background: #212529;
 
-    color: white;
+    color: white !important;
 
     padding: 15px 30px;
 
@@ -369,6 +428,14 @@ body {
         0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.position-card h3 {
+    color: red;
+}
+
+.position-card p {
+    color: red;
+}
+
 
 .featured-badge {
     position: absolute;
@@ -378,7 +445,7 @@ body {
 
     background: #ffc107;
 
-    color: black;
+    color: black !important;
 
     padding: 6px 12px;
 
@@ -396,6 +463,25 @@ body {
     background: white;
 }
 
+.contact-section h2 {
+    color: red;
+}
+
+.contact-section p {
+    color: red;
+}
+
+
+/* =========================================
+   NAVIGATION
+   NAVBAR TEXT REMAINS BLACK
+========================================= */
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: black !important;
+}
+
 
 /* =========================================
    FOOTER
@@ -404,7 +490,7 @@ body {
 .footer {
     background: #212529;
 
-    color: white;
+    color: white !important;
 
     padding: 20px 0;
 }
@@ -412,6 +498,7 @@ body {
 
 .footer p {
     margin: 0;
+    color: white !important;
 }
 
 
@@ -454,5 +541,3 @@ body {
     }
 
 }
-
-
